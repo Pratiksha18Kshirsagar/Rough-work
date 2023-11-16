@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-Flexbox</title>
+    <style>
+        div {
+            display: flex;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .right ul {
+            list-style-type: none;
+            display: flex;
+            gap: 35px;
+
+        }
+
+        .right ul li {
+            display: flex;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .image {
+            margin-left: 50px;
+        }
+
+        .container {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 280px 280px 280px;
+            background-color: white;
+            width: 65vw;
+            margin: auto;
+            gap: 10px;
+
+        }
+
+        .boxes {
+            display: grid;
+            background-color: whitesmoke;
+            height: 120px;
+            margin: 2px;
+            width: 260px;
+
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 700;
+            font-family: "Segoe UI";
+
+        }
+
+        .btn {
+            background-color: #00b6d1;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .btn1 {
+            background-color: #00d084;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media  screen and (max-width : 1000px) {
+            .container{
+                grid-template-columns: 1fr;
+;
+            }
+            .boxes{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="image">
+                <img height="50px" src="../assets!!/Dark-logo.png
+                        " alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="box"> <span>Products</span><svg width="14" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="box"> <span>Pricing</span><svg width="14" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="box"> <span>Resource</span>
+                        <svg width="14" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </li>
+                    <li class="box"> <span>About Us</span> <svg width="14" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="boxes">
+                <p>ENGLISH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>FRENCH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>ITALIAN </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>DUTCH </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>PORTUGUESE </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>AMERICAN </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>ARABIC </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>HINDI </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>TAMIL </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+            <div class="boxes">
+                <p>KANNADA </p>
+                <div class="flex"><span><button class="btn">Download 34-bit</button></span>
+                    <span><button class="btn1">Download 64-bit</button></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
